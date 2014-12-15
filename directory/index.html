@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<html>
+<head profile="//www.w3.org/2005/10/profile">
+  <title>Tech Square ATL Directory</title>
+</head>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
+
+  <!-- DataTables -->
+  <script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
+
+  <style type="text/css">
+    table.dataTable tfoot th, table.dataTable thead th {
+      padding-left: 8px;
+      text-align: left;
+    }
+
+    html {
+        font-size: 0.8em;
+    }
+  </style>
+
+<body>
+
+<table id="directory" class="display" cellspacing="0" width="100%">
+    <thead><tr><th title="Field #1">Entity</th>
+    <th title="Field #2" style="width: 100px;">Category</th>
+    <th title="Field #3" style="width: 100px;">Building</th>
+    <th title="Field #4">Suite</th>
+    </tr></thead>
+    <tfoot><tr><th title="Field #1">Entity</th>
+    <th title="Field #2">Category</th>
+    <th title="Field #3">Building</th>
+    <th title="Field #4">Suite</th>
+    </tr></tfoot>
+
+<tbody>
+<tr><td>T Mobile</td><td>Retail</td><td>TSRB</td><td>Ste-A</td></tr>
+<tr><td>Tin Drum Asia Cafe</td><td>Retail</td><td>Global Learning Center</td><td>88 5th St</td></tr>
+<tr><td>Gyro King</td><td>Retail</td><td>TSRB</td><td>Ste-E</td></tr>
+<tr><td>Moe's Southwest Grill</td><td>Retail</td><td>TSRB</td><td>Ste-C</td></tr>
+<tr><td>Walmart</td><td>Retail</td><td>GT Hotel and Conference Center</td><td>86 5th St</td></tr>
+<tr><td>Georgia Tech Global Learning Center</td><td>University/College</td><td>Global Learning Center</td><td></td></tr>
+<tr><td>Great Clips</td><td>Retail</td><td>GT Hotel and Conference Center</td><td>74 5th St</td></tr>
+<tr><td>Chuck's Famous</td><td>Retail</td><td>GT Hotel and Conference Center</td><td>68 5th St</td></tr>
+<tr><td>Waffle House</td><td>Retail</td><td>GT Hotel and Conference Center</td><td>66 5th St</td></tr>
+<tr><td>GameStop</td><td>Retail</td><td>GT Hotel and Conference Center</td><td>62 5th St</td></tr>
+<tr><td>The Spence</td><td>Retail</td><td>Centergy</td><td>170</td></tr>
+<tr><td>Georgia Tech Hotel and Conference Center</td><td>University/College</td><td>GT Hotel and Conference Center</td><td></td></tr>
+<tr><td>LA Fitness</td><td>Retail</td><td>Centergy</td><td>Ste-E</td></tr>
+<tr><td>AT&T Foundry</td><td>Corporate Innovation Center</td><td>Centergy</td><td>110</td></tr>
+<tr><td>PNC Bank</td><td>Retail</td><td>Centergy</td><td>Ste-F</td></tr>
+<tr><td>Barnes & Noble Bookstore</td><td>Retail</td><td>Scheller College of Business</td><td>48 5th St</td></tr>
+<tr><td>Starbucks</td><td>Retail</td><td>Scheller College of Business</td><td>48 5th St</td></tr>
+<tr><td>Ray's NY Style Pizza</td><td>Retail</td><td>Scheller College of Business</td><td>26 5th St</td></tr>
+<tr><td>The Barrelhouse</td><td>Retail</td><td>Scheller College of Business</td><td>22 5th St Ste. B</td></tr>
+<tr><td>AT&T Drive Studio</td><td>Corporate Innovation Center</td><td>759 West Peachtree Street</td><td>108</td></tr>
+<tr><td>Historic Academy of Medicine</td><td>Event Venue</td><td>Academy of Medicine</td><td></td></tr>
+<tr><td>Cypress Street Pint & Plate</td><td>Retail</td><td>Biltmore</td><td>817 West Peachtree St NE</td></tr>
+<tr><td>Health Systems Institute</td><td>University/College</td><td>828 West Peachtree Street</td><td>2nd floor</td></tr>
+<tr><td>Flashpoint GT Studio</td><td>Incubator</td><td>828 West Peachtree Street</td><td>3rd Floor</td></tr>
+<tr><td>Brook Byers Institute for Sustainable Systems</td><td>University/College</td><td>828 West Peachtree Street</td><td>Suite 320</td></tr>
+<tr><td>Georgia Tech Parking & Transportation Services</td><td>University/College</td><td>828 West Peachtree Street</td><td></td></tr>
+<tr><td>Georgia Tech CEISMC</td><td>University/College</td><td>Biltmore</td><td>300</td></tr>
+<tr><td>Collider ATL</td><td>Event Venue</td><td>Biltmore</td><td>A-110</td></tr>
+<tr><td>N4MD</td><td>Startup</td><td>Biltmore</td><td>Suite 1100</td></tr>
+<tr><td>TripLingo</td><td>Startup</td><td>Biltmore</td><td>Suite 1100</td></tr>
+<tr><td>Georgia Tech CEISMC Group</td><td>University/College</td><td>Biltmore</td><td>Suite 300</td></tr>
+<tr><td>Perfect Post</td><td>Startup</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>Kanga</td><td>Startup</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>Julie Bee's</td><td>Startup</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>Cyber Security Company</td><td>Startup</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>Sing Ops</td><td>Startup</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>SwipeLoyalty</td><td>Startup</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>PartPic</td><td>Startup</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>The Core Ventures</td><td>Incubator</td><td>Biltmore</td><td>Suite A110</td></tr>
+<tr><td>Georgia Tech Language Institute Faculty</td><td>University/College</td><td>Biltmore</td><td>Suite A135</td></tr>
+<tr><td>Techject</td><td>Startup</td><td>Biltmore</td><td>Suite A185</td></tr>
+<tr><td>Georgia Tech Language Institute Classrooms</td><td>University/College</td><td>Biltmore</td><td>Suite E105</td></tr>
+<tr><td>Georgia Tech Language Institute Classrooms</td><td>University/College</td><td>Biltmore</td><td>Suite E115</td></tr>
+<tr><td>Pindrop Security</td><td>Startup</td><td>Biltmore</td><td></td></tr>
+<tr><td>Georgia Power</td><td>Economic Development</td><td>Centergy</td><td>150</td></tr>
+<tr><td>UMMA</td><td>Retail</td><td>Centergy</td><td>160</td></tr>
+<tr><td>SoftWear Automation Inc.</td><td>Startup</td><td>Centergy</td><td>203</td></tr>
+<tr><td>Merlin Mobility/CN2 Technology</td><td>Startup</td><td>Centergy</td><td>205</td></tr>
+<tr><td>NextInput</td><td>Startup</td><td>Centergy</td><td>206</td></tr>
+<tr><td>Synapp.io</td><td>Startup</td><td>Centergy</td><td>207</td></tr>
+<tr><td>REscour</td><td>Startup</td><td>Centergy</td><td>208</td></tr>
+<tr><td>VoAPPs LLC</td><td>Startup</td><td>Centergy</td><td>209</td></tr>
+<tr><td>Vehcon Inc.</td><td>Startup</td><td>Centergy</td><td>211</td></tr>
+<tr><td>Sensiotec</td><td>Startup</td><td>Centergy</td><td>212</td></tr>
+<tr><td>Utility Billing Consultants LLC</td><td>Startup</td><td>Centergy</td><td>213</td></tr>
+<tr><td>Clinigence</td><td>Startup</td><td>Centergy</td><td>214</td></tr>
+<tr><td>Clean Hands Safe Hands</td><td>Startup</td><td>Centergy</td><td>217</td></tr>
+<tr><td>Alii Healthcare</td><td>Startup</td><td>Centergy</td><td>218</td></tr>
+<tr><td>Verdeeco</td><td>Startup</td><td>Centergy</td><td>219</td></tr>
+<tr><td>One Care LLC</td><td>Startup</td><td>Centergy</td><td>220</td></tr>
+<tr><td>Sideqik</td><td>Startup</td><td>Centergy</td><td>221</td></tr>
+<tr><td>UserIQ</td><td>Startup</td><td>Centergy</td><td>224</td></tr>
+<tr><td>Origomni Corp DBA ItzaFlash.com</td><td>Startup</td><td>Centergy</td><td>225</td></tr>
+<tr><td>APAT</td><td>Startup</td><td>Centergy</td><td>238</td></tr>
+<tr><td>Monsieur LLC</td><td>Startup</td><td>Centergy</td><td>243</td></tr>
+<tr><td>Bioautomaton Systems Inc.</td><td>Startup</td><td>Centergy</td><td>310</td></tr>
+<tr><td>BLH Venture Partners LLC</td><td>Investor</td><td>Centergy</td><td>311</td></tr>
+<tr><td>Kontrol Freek</td><td>Startup</td><td>Centergy</td><td>311</td></tr>
+<tr><td>InterCAX</td><td>Startup</td><td>Centergy</td><td>312</td></tr>
+<tr><td>TransNexus</td><td>Startup</td><td>Centergy</td><td>313</td></tr>
+<tr><td>covello LLC</td><td>Service Provider</td><td>Centergy</td><td>314</td></tr>
+<tr><td>IneoQuest Technologies Inc.</td><td>Startup</td><td>Centergy</td><td>315</td></tr>
+<tr><td>Kinetic Ventures</td><td>Investor</td><td>Centergy</td><td>316</td></tr>
+<tr><td>Penguin Computing</td><td>Startup</td><td>Centergy</td><td>317</td></tr>
+<tr><td>Smart Enclosures</td><td>Startup</td><td>Centergy</td><td>318</td></tr>
+<tr><td>Raycom Media Inc.</td><td>Startup</td><td>Centergy</td><td>322</td></tr>
+<tr><td>Worthscape LLC</td><td>Investor</td><td>Centergy</td><td>323</td></tr>
+<tr><td>First Tryon Securities LLC</td><td>Investor</td><td>Centergy</td><td>325</td></tr>
+<tr><td>Earthly Dynamics LLC</td><td>Startup</td><td>Centergy</td><td>327</td></tr>
+<tr><td>iNet Systems Corporation</td><td>Startup</td><td>Centergy</td><td>327.5</td></tr>
+<tr><td>CareTrader LLC</td><td>Startup</td><td>Centergy</td><td>330</td></tr>
+<tr><td>e3datasolutions LLC dba MyCareText</td><td>Startup</td><td>Centergy</td><td>331</td></tr>
+<tr><td>Nuesoft Technologies</td><td>Startup</td><td>Centergy</td><td>332</td></tr>
+<tr><td>Masliah Analytics</td><td>Startup</td><td>Centergy</td><td>339</td></tr>
+<tr><td>Skytree Corporation</td><td>Startup</td><td>Centergy</td><td>348</td></tr>
+<tr><td>Advanced Technology Development Center (ATDC)</td><td>Incubator</td><td>Centergy</td><td>380</td></tr>
+<tr><td>Quickstart</td><td>Economic Development</td><td>Centergy</td><td>400</td></tr>
+<tr><td>Technical College System of Georgia</td><td>University/College</td><td>Centergy</td><td>400</td></tr>
+<tr><td>starMobile Inc.</td><td>Startup</td><td>Centergy</td><td>407</td></tr>
+<tr><td>ThyssenKrupp Elevator Corporation</td><td>Corporate Innovation Center</td><td>Centergy</td><td>410</td></tr>
+<tr><td>VentureLab</td><td>Incubator</td><td>Centergy</td><td>415</td></tr>
+<tr><td>Ridgewood Advisors</td><td>Investor</td><td>Centergy</td><td>421</td></tr>
+<tr><td>Provost LLC</td><td>Investor</td><td>Centergy</td><td>422</td></tr>
+<tr><td>Upper Left Capital LLC</td><td>Investor</td><td>Centergy</td><td>423</td></tr>
+<tr><td>Vocap Investment Partners</td><td>Investor</td><td>Centergy</td><td>426</td></tr>
+<tr><td>Mosley Ventures LLC</td><td>Investor</td><td>Centergy</td><td>427</td></tr>
+<tr><td>ProConsultant Informatique</td><td>Startup</td><td>Centergy</td><td>428</td></tr>
+<tr><td>ScanTech IBS LLC</td><td>Startup</td><td>Centergy</td><td>430</td></tr>
+<tr><td>Celtaxsys</td><td>Startup</td><td>Centergy</td><td>460</td></tr>
+<tr><td>Office of Industry Research</td><td>University/College</td><td>Centergy</td><td>470</td></tr>
+<tr><td>Institute of People and Technology (Georgia Tech)</td><td>University/College</td><td>Centergy</td><td>600</td></tr>
+<tr><td>Georgia Tech Tennenbaum Institute</td><td>University/College</td><td>Centergy</td><td>600</td></tr>
+<tr><td>Technology Association of Georgia</td><td>Economic Development</td><td>Centergy</td><td>625</td></tr>
+<tr><td>Georgia Electric Membership Corporation</td><td>Economic Development</td><td>Centergy</td><td>710</td></tr>
+<tr><td>Home Depot Innovation Center</td><td>Corporate Innovation Center</td><td>Centergy</td><td>800</td></tr>
+<tr><td>Gateway Facility Services</td><td>Service Provider</td><td>Centergy</td><td>830</td></tr>
+<tr><td>Electric Cities of Georgia</td><td>Economic Development</td><td>Centergy</td><td>850</td></tr>
+<tr><td>Georgia Tech Research Institute</td><td>University/College</td><td>Centergy</td><td>900</td></tr>
+<tr><td>Gateway Development</td><td>Service Provider</td><td>Centergy</td><td>1000</td></tr>
+<tr><td>Lucena</td><td>Startup</td><td>Centergy</td><td>1025</td></tr>
+<tr><td>The University Financing Foundation</td><td>Service Provider</td><td>Centergy</td><td>1050</td></tr>
+<tr><td>Gene Kansas Real Estate</td><td>Service Provider</td><td>Centergy</td><td>1055</td></tr>
+<tr><td>United States Export Assistance Center</td><td>Economic Development</td><td>Centergy</td><td>1060</td></tr>
+<tr><td>Panasonic Automation Innovation Center</td><td>Corporate Innovation Center</td><td>Centergy</td><td>1075</td></tr>
+<tr><td>Accenture</td><td>Service Provider</td><td>Centergy</td><td>1100/825</td></tr>
+<tr><td>Georgia Department of Economic Development</td><td>Economic Development</td><td>Centergy</td><td>1300/1200</td></tr>
+<tr><td>ATDC Entrepreneurs Resource Center</td><td>Event Venue</td><td>Centergy</td><td>1st floor</td></tr>
+<tr><td>Lumense</td><td>Startup</td><td>Centergy</td><td>210/247/248</td></tr>
+<tr><td>SpringBot Inc.</td><td>Startup</td><td>Centergy</td><td>214/215/246</td></tr>
+<tr><td>AvarSYS Inc.</td><td>Startup</td><td>Centergy</td><td>236A</td></tr>
+<tr><td>GalliumGroup</td><td>Startup</td><td>Centergy</td><td>236B</td></tr>
+<tr><td>Orgora LLC</td><td>Startup</td><td>Centergy</td><td>236D</td></tr>
+<tr><td>DTI Robotics US Inc.</td><td>Startup</td><td>Centergy</td><td>236G- H</td></tr>
+<tr><td>Terminal Velocity Aerospace LLC</td><td>Startup</td><td>Centergy</td><td>244A- E</td></tr>
+<tr><td>ProsumerGrid Inc.</td><td>Startup</td><td>Centergy</td><td>244B</td></tr>
+<tr><td>Morzine Medical</td><td>Startup</td><td>Centergy</td><td>244C</td></tr>
+<tr><td>Oriole Animal Health</td><td>Startup</td><td>Centergy</td><td>244D</td></tr>
+<tr><td>Senior Report Inc.</td><td>Startup</td><td>Centergy</td><td>244G</td></tr>
+<tr><td>Shot Stats LLC.</td><td>Startup</td><td>Centergy</td><td>246F</td></tr>
+<tr><td>ATDC Community Room</td><td>Event Venue</td><td>Centergy</td><td>2nd floor</td></tr>
+<tr><td>Midtown Consulting Group</td><td>Service Provider</td><td>Centergy</td><td>319/342/321</td></tr>
+<tr><td>Hodges Room</td><td>Event Venue</td><td>Centergy</td><td>3rd floor</td></tr>
+<tr><td>CSX Transportation Inc.</td><td>Corporate Innovation Center</td><td>Centergy</td><td>405A</td></tr>
+<tr><td>TechCFO</td><td>Service Provider</td><td>Centergy</td><td>405B</td></tr>
+<tr><td>Egos Ventures</td><td>Startup</td><td>Centergy</td><td>405C- D</td></tr>
+<tr><td>Star2Star Communications</td><td>Startup</td><td>Centergy</td><td>855/860</td></tr>
+<tr><td>Centergy Plaza</td><td>Event Venue</td><td>Centergy</td><td></td></tr>
+<tr><td>Centergy Lobby</td><td>Event Venue</td><td>Centergy</td><td></td></tr>
+<tr><td>Centergy Penthouse Patio</td><td>Event Venue</td><td>Centergy</td><td></td></tr>
+<tr><td>Centergy Conference Room 1010</td><td>Event Venue</td><td>Centergy</td><td></td></tr>
+<tr><td>Georgia Tech Enterprise Innovation Institute</td><td>University/College</td><td>Centergy</td><td></td></tr>
+<tr><td>Georgia Tech Center for Quality Growth and Regional Development</td><td>University/College</td><td>Economic Development Building</td><td>213</td></tr>
+<tr><td>Georgia Tech Foundation</td><td>University/College</td><td>Economic Development Building</td><td>4th floor</td></tr>
+<tr><td>Rob Davis Salon</td><td>Retail</td><td>MidCity Lofts</td><td>848 Spring St</td></tr>
+<tr><td>MidCity Dentistry</td><td>Service Provider</td><td>MidCity Lofts</td><td>848 Spring St</td></tr>
+<tr><td>CallRail</td><td>Startup</td><td>MidCity Lofts</td><td>848 Spring St</td></tr>
+<tr><td>Grain</td><td>Retail</td><td>MidCity Lofts</td><td>848 Spring St</td></tr>
+<tr><td>LeCraw Auditorium</td><td>Event Venue</td><td>Scheller College of Business</td><td>1st Floor</td></tr>
+<tr><td>Georgia Tech Scheller College of Management</td><td>University/College</td><td>Scheller College of Business</td><td>800 West Peachtree NW</td></tr>
+<tr><td>Georgia Tech Institute for Leadership and Entrepreneurship</td><td>University/College</td><td>Scheller College of Business</td><td></td></tr>
+<tr><td>Square on Fifth (SQ5)</td><td>Student Housing</td><td>Square on Fifth</td><td></td></tr>
+<tr><td>Yogli Mogli</td><td>Retail</td><td>TSRB</td><td>Ste-D1</td></tr>
+<tr><td>Subway</td><td>Retail</td><td>TSRB</td><td>Ste-D2</td></tr>
+<tr><td>TSRB Ballroom</td><td>Event Venue</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech Electrical and Computer Engineering</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech Center for Signal and Image Processing</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech Georgia Centers for Advanced Telecommunications Technology</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech Telecom</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>General Electric - Smart Grid Challenge Lab</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Electronic Design Center</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech Research Network OpCenter</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech School of Digital Media</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech GVU Center</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech Interactive Media Technology Center</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Georgia Tech School of Interactive Computing</td><td>University/College</td><td>TSRB</td><td></td></tr>
+<tr><td>Square on Fifth (SQ5) Leasing Office</td><td>Student Housing</td><td>TSRB</td><td>
+</tbody></table>
+
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#directory tfoot th').each( function () {
+      var title = $('#directory thead th').eq( $(this).index() ).text();
+      $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+  
+    // DataTable
+    var table = $('#directory').DataTable( {
+      "dom": '<"toolbar">frtip' // hides visible rows option
+    });
+  
+    // Apply the search
+    table.columns().eq( 0 ).each( function ( colIdx ) {
+      $( 'input', table.column( colIdx ).footer() ).on( 'keyup change', function () {
+        table
+          .column( colIdx )
+          .search( this.value )
+          .draw();
+      } );
+    } );
+  } );
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+html, body {
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+#sidebar {
+  width: 180px;
+  float: left;
+  margin-top: 10px;
+}
+
+#map {
+  /*width: 700px;*/
+  height: 100%;
+  float: left;
+
+  /* Firefox */
+  width: -moz-calc(100% - 180px);
+  /* WebKit */
+  width: -webkit-calc(100% - 180px);
+  /* Opera */
+  width: -o-calc(100% - 180px);
+  /* Standard */
+  width: calc(100% - 180px);
+}
+
+#missing {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+.marker-cluster-small {
+  background-color: rgba(241, 211, 87, 0.6);
+  }
+.marker-cluster-small div {
+  background-color: rgba(240, 194, 12, 0.6);
+  }
+
+.marker-cluster-medium {
+  background-color: rgba(253, 156, 115, 0.6);
+  }
+.marker-cluster-medium div {
+  background-color: rgba(241, 128, 23, 0.6);
+  }
+
+.marker-cluster-large {
+  background-color: rgba(242, 90, 82, 0.6);
+  }
+.marker-cluster-large div {
+  background-color: rgba(242, 35, 24, 0.6);
+  }
+
+/* icons */
+i {
+  width: 14px;
+}
+
+/* buttons */
+button {
+  width: 160px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.btn {
+  text-align: left;
+  color: white;
+  font-size: 12px;
+}
+
+#all,#none {
+  background-color: #aaa;
+}
+
+#cic.active {
+  background-color: #436978;
+}
+
+#ed.active {
+  background-color: #72B026;
+}
+
+#event.active {
+  background-color: #5B396B;
+}
+
+#incubator.active {
+  background-color: #F69730;
+}
+
+#investor.active {
+  background-color: #A23336;
+}
+
+#retail.active {
+  background-color: #728224;
+}
+
+#service.active {
+  background-color: #D252B9;
+}
+
+#startup.active {
+  background-color: #38AADD;
+}
+
+#univ.active {
+  background-color: #0067A3;
+}
+
+#other.active {
+  background-color: #D63E2A;
+}
+
+.normal {
+  background-color: gray;
+}
+
+
