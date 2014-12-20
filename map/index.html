@@ -7,7 +7,6 @@
   <link rel="icon" 
     type="image/png" 
     href="//mollietaylor.com/favicon.png">
-</head>
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
@@ -43,11 +42,84 @@
 
   <link rel="stylesheet" type="text/css" href="map.css">
 
-  <script type="text/javascript" src="buttons.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37767407-2', 'mollietaylor.com');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script type="text/javascript">
+    function hideFilters() {
+      document.getElementById("sidebar").style.width = "60px";
+      // change map width
+      document.getElementById("menu").style.visibility = "hidden";
+      document.getElementById("menu-button").innerHTML = '<button class="btn" onclick="showFilters();" style="width:40px;text-align:center;"><i class="fa fa-bars"></i></button><br><br>';
+      document.getElementById("map").style.width = "-moz-calc(100% - 60px)";
+      document.getElementById("map").style.width = "-webkit-calc(100% - 60px)";
+      document.getElementById("map").style.width = "-o-calc(100% - 60px)";
+      document.getElementById("map").style.width = "calc(100% - 60px)";
+    }
+
+    function showFilters() {
+      document.getElementById("sidebar").style.width = "180px";
+      // change map width
+      document.getElementById("menu").style.visibility = "visible";
+      document.getElementById("menu-button").innerHTML = '<button class="btn" onclick="hideFilters();"><i class="fa fa-bars"></i> Hide filters</button><br><br>';
+      document.getElementById("map").style.width = "-moz-calc(100% - 180px)";
+      document.getElementById("map").style.width = "-webkit-calc(100% - 180px)";
+      document.getElementById("map").style.width = "-o-calc(100% - 180px)";
+      document.getElementById("map").style.width = "calc(100% - 180px)";
+    }
+    </script>
+</head>
 <body>
-<div id="sidebar">
-  Loading
-  <!-- see buttons.js -->
+<div id="sidebar"> 
+  <div id="menu-button">
+    <button class="btn" onclick="hideFilters();"><i class="fa fa-bars"></i> Hide Filters</button><br><br>
+  </div>
+  <div id="menu">
+    <div id="map-buttons" data-toggle="buttons-checkbox">  
+      <button id="cic" class="btn active">
+        <i class="fa fa-briefcase"></i> 
+        Corporate Innovation<br><span style="padding-left: 17px">Center</span></button><br>
+      <button id="ed" class="btn active">
+        <i class="fa fa-money"></i> 
+        Economic<br><span style="padding-left: 17px">Development</span></button><br>
+      <button id="event" class="btn active">
+        <i class="fa fa-group"></i> 
+        Event Venue</button><br>
+      <button id="incubator" class="btn active">
+        <i class="fa fa-lightbulb-o"></i> 
+        Incubator</button><br>
+      <button id="investor" class="btn active">
+        <i class="ionicons ion-arrow-graph-up-right"></i> 
+        Investor</button><br>
+      <button id="retail" class="btn active">
+        <i class="ionicons ion-bag"></i> 
+        Retail</button><br>
+      <button id="service" class="btn active">
+        <i class="fa fa-wrench"></i> 
+        Service Provider</button><br>
+      <button id="startup" class="btn active">
+        <i class="fa fa-mobile"></i> 
+        Startup</button><br>
+      <button id="univ" class="btn active">
+        <i class="ionicons ion-university"></i> 
+        University/<br><span style="padding-left: 17px">College</span></button><br>
+      <button id="other" class="btn active">
+        <i class="fa fa-thumb-tack"></i> 
+        Other</button><br>
+    </div>
+    <button id="all" class="btn" onclick="showAllLayers()">All</button><br>
+    <button id="none" class="btn" onclick="hideAllLayers()">None</button>
+
+    <div id="missing"><a href="https://docs.google.com/forms/d/1QQzf-1HFYGZ9X0Q_f1LBVBONK32zHt95hFOfYQ8iEHQ/viewform?usp=send_form" target="_blank">Is something missing? Please help us add locations to the map.</a></div>
+  </div>
 </div>
 
 <div id="map"></div>
